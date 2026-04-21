@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "whisk-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation for Google Labs Whisk - prompt submission with popup handling",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "save-auth": "node auth/save-auth.js",
+    "codegen": "npx playwright codegen https://labs.google/fx/tools/whisk"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "dotenv": "^16.4.5"
+  }
+}
